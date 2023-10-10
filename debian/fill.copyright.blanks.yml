@@ -1,0 +1,11 @@
+debian/:
+    copyright: 2020—2022 Andrej Shadura <andrewsh@debian.org>
+    license: Expat
+LICENSE:
+    skip: 1
+artwork/*:
+    override-copyright: 2018 Philip G Jones <philip.graham.jones@googlemail.com>
+    license: CC0
+.*:
+    copyright: 2018-2022 Philip G Jones <philip.graham.jones@googlemail.com>
+    license: Expat

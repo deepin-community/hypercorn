@@ -1,0 +1,13 @@
+Document: python-hypercorn-doc
+Title: hypercorn Documentation
+Author: Philip Jones <philip.graham.jones@googlemail.com>
+Section: Programming/Python
+
+Format: HTML
+Index: /usr/share/doc/python-hypercorn-doc/html/index.html
+Files:
+ /usr/share/doc/python-hypercorn-doc/html/*.html
+ /usr/share/doc/python-hypercorn-doc/html/discussion/*.html
+ /usr/share/doc/python-hypercorn-doc/html/how_to_guides/*.html
+ /usr/share/doc/python-hypercorn-doc/html/reference/*.html
+ /usr/share/doc/python-hypercorn-doc/html/tutorials/*.html
