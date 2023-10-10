@@ -1,5 +1,115 @@
-template-repository (1.0-1) unstable; urgency=medium
+hypercorn (0.14.4-1) unstable; urgency=medium
 
-  * Initial release
+  * New upstream version 0.14.4
+  * Add python3-pytest-trio to Build-Depends and enable trio tests.
+  * Run wrap-and-sort -bast to reduce diff size of future changes.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Michael Fladischer <fladi@debian.org>  Mon, 10 Jul 2023 11:30:00 +0000
+
+hypercorn (0.14.3-2) unstable; urgency=medium
+
+  * Build and ship documentation in python-hypercorn-doc package.
+
+ -- Michael Fladischer <fladi@debian.org>  Sat, 01 Jul 2023 21:21:44 +0000
+
+hypercorn (0.14.3-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Upstream moved to github. Adapt URL where necessary.
+  * Run wrap-and-sort -bast to reduce diff size of future changes.
+  * Switch to poetry buildsystem.
+  * Remove patches, included upstream.
+  * Skip more tests due to missing pytest-trio package.
+  * Set Rules-Requires-Root: no.
+  * Remove X-Python3-Version field.
+  * Bump Standards-Version to 4.6.2.
+  * Add myself to d/copyright and as uploader.
+  * Use help2man to provide a manpage for hypercorn.1.
+  * Fix permissions for files in /usr/lib/python3.
+  * Install testfiles using d/pybuild.testfiles.
+  * Enable upstream testsuite for autopkgtests.
+
+ -- Michael Fladischer <fladi@debian.org>  Sat, 01 Jul 2023 09:39:41 +0000
+
+hypercorn (0.13.2-3) unstable; urgency=medium
+
+  * Team Upload.
+  * Clean-up symlink after dh_auto_clean hook (Closes: #1005619)
+  * Add patch to fix coroutine based tests errors
+
+ -- Nilesh Patra <nilesh@debian.org>  Sun, 11 Dec 2022 12:46:04 +0000
+
+hypercorn (0.13.2-2) unstable; urgency=medium
+
+  * Add an upstream patch to fix HTTP connection recycling bug.
+  * Update copyright years.
+
+ -- Andrej Shadura <andrewsh@debian.org>  Thu, 17 Feb 2022 12:33:03 +0100
+
+hypercorn (0.13.2-1) unstable; urgency=medium
+
+  * Switch to GitLab releases.
+  * New upstream release.
+  * Add an upstream setup.py to avoid messing around with pyproject.toml.
+  * Ignore middleware tests as they unconditionally import trio.
+  * Use dh-sequence-python3.
+  * Bump debhelper from old 12 to 13.
+  * Set field Upstream-Name in debian/copyright.
+  * Remove obsolete field Name from debian/upstream/metadata (already present
+    in machine-readable debian/copyright).
+  * Update standards version to 4.6.0, no changes needed.
+
+ -- Andrej Shadura <andrewsh@debian.org>  Thu, 06 Jan 2022 14:43:11 +0100
+
+hypercorn (0.11.2-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Andrej Shadura <andrewsh@debian.org>  Fri, 26 Feb 2021 10:01:43 +0100
+
+hypercorn (0.11.1-2) unstable; urgency=medium
+
+  * Depend on h11 0.11.
+
+ -- Andrej Shadura <andrewsh@debian.org>  Wed, 28 Oct 2020 19:43:46 +0100
+
+hypercorn (0.11.1-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Andrej Shadura <andrewsh@debian.org>  Wed, 14 Oct 2020 15:38:53 +0200
+
+hypercorn (0.11.0-1) unstable; urgency=medium
+
+  [ Andrej Shadura ]
+  * New upstream release.
+  * Add a dependency on python3-typing-extensions.
+
+  [ Ondřej Nový ]
+  * Update Maintainer field with new Debian Python Team contact address.
+  * Update Vcs-* fields with new Debian Python Team Salsa layout.
+
+ -- Andrej Shadura <andrewsh@debian.org>  Tue, 29 Sep 2020 09:24:21 +0200
+
+hypercorn (0.10.1-1) unstable; urgency=medium
+
+  [ Andrej Shadura ]
+  * New upstream release (Closes: #964750).
+
+  [ Peter Michael Green ]
+  * Update build dependencies, remove build dependency on python3-asynctest
+    and add build dependency on python3-all-dev (>= 3.8.2-3) | python3-mock.
+
+ -- Andrej Shadura <andrewsh@debian.org>  Sat, 11 Jul 2020 15:14:18 +0200
+
+hypercorn (0.9.4-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Andrej Shadura <andrewsh@debian.org>  Fri, 17 Apr 2020 13:36:29 +0200
+
+hypercorn (0.9.2-1) unstable; urgency=low
+
+  * Initial upload (Closes: #953886).
+
+ -- Andrej Shadura <andrewsh@debian.org>  Sun, 15 Mar 2020 12:33:24 +0100

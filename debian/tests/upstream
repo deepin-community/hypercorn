@@ -1,0 +1,9 @@
+#!/bin/sh
+
+set -e
+
+cp -r pyproject.toml tests ${AUTOPKGTEST_TMP}
+cd ${AUTOPKGTEST_TMP}
+for p in $(py3versions -s); do
+    $p -m pytest tests --ignore=tests/test_app_wrappers.py --ignore=tests/middleware/test_dispatcher.py
+done
